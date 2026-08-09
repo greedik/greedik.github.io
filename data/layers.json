@@ -248,152 +248,153 @@
                 }
             ]
             
-        }
+        },
+        
         "voice": {
             "name": "Голос",
             "options": [
                 {
-                    "name": "Голос 01",
+                    "name": "Бандит (STALKER)",
                     "audio": "assets/voices/voice_01.wav"
                 },
                 {
-                    "name": "Голос 02",
+                    "name": "Доменик Торетто (Чонишвили)",
                     "audio": "assets/voices/voice_02.wav"
                 },
                 {
-                    "name": "Голос 03",
+                    "name": "Пророк (Crysis)",
                     "audio": "assets/voices/voice_03.wav"
                 },
                 {
-                    "name": "Голос 04",
+                    "name": "Дедпул (Гланц)",
                     "audio": "assets/voices/voice_04.wav"
                 },
                 {
-                    "name": "Голос 05",
+                    "name": "Дональд Дак",
                     "audio": "assets/voices/voice_05.wav"
                 },
                 {
-                    "name": "Голос 06",
+                    "name": "Гаврилов",
                     "audio": "assets/voices/voice_06.wav"
                 },
                 {
-                    "name": "Голос 07",
+                    "name": "Саня",
                     "audio": "assets/voices/voice_07.wav"
                 },
                 {
-                    "name": "Голос 08",
+                    "name": "Пряник (Шрек)",
                     "audio": "assets/voices/voice_08.wav"
                 },
                 {
-                    "name": "Голос 09",
+                    "name": "Гладос",
                     "audio": "assets/voices/voice_09.wav"
                 },
                 {
-                    "name": "Голос 10",
+                    "name": "Мой",
                     "audio": "assets/voices/voice_10.wav"
                 },
                 {
-                    "name": "Голос 11",
+                    "name": "Хэви (Team Fortress 2)",
                     "audio": "assets/voices/voice_11.wav"
                 },
                 {
-                    "name": "Голос 12",
+                    "name": "Джокер",
                     "audio": "assets/voices/voice_12.wav"
                 },
                 {
-                    "name": "Голос 13",
+                    "name": "Куплинов",
                     "audio": "assets/voices/voice_13.wav"
                 },
                 {
-                    "name": "Голос 14",
+                    "name": "Микки Маус",
                     "audio": "assets/voices/voice_14.wav"
                 },
                 {
-                    "name": "Голос 15",
+                    "name": "Нагиев",
                     "audio": "assets/voices/voice_15.wav"
                 },
                 {
-                    "name": "Голос 16",
+                    "name": "Копатыч",
                     "audio": "assets/voices/voice_16.wav"
                 },
                 {
-                    "name": "Голос 17",
+                    "name": "Мордекай (Обычный Мультик)",
                     "audio": "assets/voices/voice_17.wav"
                 },
                 {
-                    "name": "Голос 18",
+                    "name": "Неко Арк",
                     "audio": "assets/voices/voice_18.wav"
                 },
                 {
-                    "name": "Голос 19",
+                    "name": "Оптимус Прайм",
                     "audio": "assets/voices/voice_19.wav"
                 },
                 {
-                    "name": "Голос 20",
+                    "name": "Оксимирон",
                     "audio": "assets/voices/voice_20.wav"
                 },
                 {
-                    "name": "Голос 21",
+                    "name": "Папич",
                     "audio": "assets/voices/voice_21.wav"
                 },
                 {
-                    "name": "Голос 22",
+                    "name": "Патрик",
                     "audio": "assets/voices/voice_22.wav"
                 },
                 {
-                    "name": "Голос 23",
+                    "name": "Питер Гриффин",
                     "audio": "assets/voices/voice_23.wav"
                 },
                 {
-                    "name": "Голос 24",
+                    "name": "Пудж",
                     "audio": "assets/voices/voice_24.wav"
                 },
                 {
-                    "name": "Голос 25",
+                    "name": "Президент",
                     "audio": "assets/voices/voice_25.wav"
                 },
                 {
-                    "name": "Голос 26",
+                    "name": "Соник",
                     "audio": "assets/voices/voice_26.wav"
                 },
                 {
-                    "name": "Голос 27",
+                    "name": "Человек Паук",
                     "audio": "assets/voices/voice_27.wav"
                 },
                 {
-                    "name": "Голос 28",
+                    "name": "Губка Боб",
                     "audio": "assets/voices/voice_28.wav"
                 },
                 {
-                    "name": "Голос 29",
+                    "name": "Стратос",
                     "audio": "assets/voices/voice_29.wav"
                 },
                 {
-                    "name": "Голос 30",
+                    "name": "Трамп",
                     "audio": "assets/voices/voice_30.wav"
                 },
                 {
-                    "name": "Голос 31",
+                    "name": "Братишкин",
                     "audio": "assets/voices/voice_31.wav"
                 },
                 {
-                    "name": "Голос 32",
+                    "name": "Уолтер Уайт",
                     "audio": "assets/voices/voice_32.wav"
                 },
                 {
-                    "name": "Голос 33",
+                    "name": "Винни Пух",
                     "audio": "assets/voices/voice_33.wav"
                 },
                 {
-                    "name": "Голос 34",
+                    "name": "Иван Золо",
                     "audio": "assets/voices/voice_34.wav"
                 },
                 {
-                    "name": "Голос 35",
+                    "name": "DeadP47",
                     "audio": "assets/voices/voice_35.wav"
                 },
                 {
-                    "name": "Голос 36",
+                    "name": "itpedia",
                     "audio": "assets/voices/voice_36.wav"
                 }
             ]
