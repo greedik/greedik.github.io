@@ -1,0 +1,53 @@
+{
+    "layerOrder": [
+        "body",
+        "eyes",
+        "accessory"
+    ],
+
+    "categories": {
+
+        "body": {
+            "name": "Персонаж",
+            "options": [
+                {
+                    "name": "Персонаж 1",
+                    "image": "assets/body/character1.png"
+                },
+                {
+                    "name": "Персонаж 2",
+                    "image": "assets/body/character2.png"
+                }
+            ]
+        },
+
+        "eyes": {
+            "name": "Глаза",
+            "options": [
+                {
+                    "name": "Глаза 1",
+                    "image": "assets/eyes/eyes1.png"
+                },
+                {
+                    "name": "Глаза 2",
+                    "image": "assets/eyes/eyes2.png"
+                }
+            ]
+        },
+
+        "accessory": {
+            "name": "Аксессуар",
+            "options": [
+                {
+                    "name": "Аксессуар 1",
+                    "image": "assets/accessory/accessory1.png"
+                },
+                {
+                    "name": "Аксессуар 2",
+                    "image": "assets/accessory/accessory2.png"
+                }
+            ]
+        }
+
+    }
+}
