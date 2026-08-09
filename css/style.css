@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #202124;
+    color: #fff;
+}
+
+.app {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+h1 {
+    margin: 0 0 20px;
+    font-size: 28px;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    gap: 24px;
+}
+
+.panel,
+.preview {
+    background: #292a2d;
+    border-radius: 14px;
+    padding: 20px;
+}
+
+.control {
+    margin-bottom: 16px;
+}
+
+.control:last-child {
+    margin-bottom: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: 700;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 44px 1fr 44px;
+    gap: 8px;
+}
+
+button,
+select {
+    width: 100%;
+    min-height: 42px;
+    border: 0;
+    border-radius: 8px;
+    background: #3c4043;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #4b4f52;
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+select {
+    padding: 0 10px;
+}
+
+.download {
+    margin-top: 12px;
+    background: #8ab4f8;
+    color: #202124;
+    font-weight: 700;
+}
+
+.download:hover {
+    background: #a8c7fa;
+}
+
+.stage {
+    position: relative;
+
+    width: min(70vw, 600px);
+    max-width: 100%;
+
+    aspect-ratio: 1 / 1;
+
+    margin: 0 auto;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(45deg, #eee 25%, transparent 25%),
+        linear-gradient(-45deg, #eee 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #eee 75%),
+        linear-gradient(-45deg, transparent 75%, #eee 75%);
+
+    background-size: 32px 32px;
+
+    background-position:
+        0 0,
+        0 16px,
+        16px -16px,
+        -16px 0;
+
+    border-radius: 10px;
+}
+
+.stage img {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    pointer-events: none;
+    user-select: none;
+}
+
+.status {
+    margin-top: 12px;
+
+    color: #bdc1c6;
+
+    min-height: 20px;
+
+    text-align: center;
+}
+
+.loading {
+    color: #bdc1c6;
+}
+
+.error {
+    padding: 12px;
+
+    border-radius: 8px;
+
+    background: #5f2121;
+    color: #ffb4ab;
+
+    line-height: 1.5;
+}
+
+.control button {
+    font-size: 20px;
+}
+
+.control select {
+    min-width: 0;
+}
+
+@media (max-width: 800px) {
+
+    .layout {
+        grid-template-columns: 1fr;
+    }
+
+    .stage {
+        width: min(90vw, 600px);
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .app {
+        padding: 12px;
+    }
+
+    .panel,
+    .preview {
+        padding: 14px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .row {
+        grid-template-columns: 42px 1fr 42px;
+    }
+
+}
