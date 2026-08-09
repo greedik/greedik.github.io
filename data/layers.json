@@ -247,6 +247,156 @@
                     "image": "assets/hat/hat_16.png"
                 }
             ]
+            
+        }
+        "voice": {
+            "name": "Голос",
+            "options": [
+                {
+                    "name": "Голос 01",
+                    "audio": "assets/voices/voice_01.wav"
+                },
+                {
+                    "name": "Голос 02",
+                    "audio": "assets/voices/voice_02.wav"
+                },
+                {
+                    "name": "Голос 03",
+                    "audio": "assets/voices/voice_03.wav"
+                },
+                {
+                    "name": "Голос 04",
+                    "audio": "assets/voices/voice_04.wav"
+                },
+                {
+                    "name": "Голос 05",
+                    "audio": "assets/voices/voice_05.wav"
+                },
+                {
+                    "name": "Голос 06",
+                    "audio": "assets/voices/voice_06.wav"
+                },
+                {
+                    "name": "Голос 07",
+                    "audio": "assets/voices/voice_07.wav"
+                },
+                {
+                    "name": "Голос 08",
+                    "audio": "assets/voices/voice_08.wav"
+                },
+                {
+                    "name": "Голос 09",
+                    "audio": "assets/voices/voice_09.wav"
+                },
+                {
+                    "name": "Голос 10",
+                    "audio": "assets/voices/voice_10.wav"
+                },
+                {
+                    "name": "Голос 11",
+                    "audio": "assets/voices/voice_11.wav"
+                },
+                {
+                    "name": "Голос 12",
+                    "audio": "assets/voices/voice_12.wav"
+                },
+                {
+                    "name": "Голос 13",
+                    "audio": "assets/voices/voice_13.wav"
+                },
+                {
+                    "name": "Голос 14",
+                    "audio": "assets/voices/voice_14.wav"
+                },
+                {
+                    "name": "Голос 15",
+                    "audio": "assets/voices/voice_15.wav"
+                },
+                {
+                    "name": "Голос 16",
+                    "audio": "assets/voices/voice_16.wav"
+                },
+                {
+                    "name": "Голос 17",
+                    "audio": "assets/voices/voice_17.wav"
+                },
+                {
+                    "name": "Голос 18",
+                    "audio": "assets/voices/voice_18.wav"
+                },
+                {
+                    "name": "Голос 19",
+                    "audio": "assets/voices/voice_19.wav"
+                },
+                {
+                    "name": "Голос 20",
+                    "audio": "assets/voices/voice_20.wav"
+                },
+                {
+                    "name": "Голос 21",
+                    "audio": "assets/voices/voice_21.wav"
+                },
+                {
+                    "name": "Голос 22",
+                    "audio": "assets/voices/voice_22.wav"
+                },
+                {
+                    "name": "Голос 23",
+                    "audio": "assets/voices/voice_23.wav"
+                },
+                {
+                    "name": "Голос 24",
+                    "audio": "assets/voices/voice_24.wav"
+                },
+                {
+                    "name": "Голос 25",
+                    "audio": "assets/voices/voice_25.wav"
+                },
+                {
+                    "name": "Голос 26",
+                    "audio": "assets/voices/voice_26.wav"
+                },
+                {
+                    "name": "Голос 27",
+                    "audio": "assets/voices/voice_27.wav"
+                },
+                {
+                    "name": "Голос 28",
+                    "audio": "assets/voices/voice_28.wav"
+                },
+                {
+                    "name": "Голос 29",
+                    "audio": "assets/voices/voice_29.wav"
+                },
+                {
+                    "name": "Голос 30",
+                    "audio": "assets/voices/voice_30.wav"
+                },
+                {
+                    "name": "Голос 31",
+                    "audio": "assets/voices/voice_31.wav"
+                },
+                {
+                    "name": "Голос 32",
+                    "audio": "assets/voices/voice_32.wav"
+                },
+                {
+                    "name": "Голос 33",
+                    "audio": "assets/voices/voice_33.wav"
+                },
+                {
+                    "name": "Голос 34",
+                    "audio": "assets/voices/voice_34.wav"
+                },
+                {
+                    "name": "Голос 35",
+                    "audio": "assets/voices/voice_35.wav"
+                },
+                {
+                    "name": "Голос 36",
+                    "audio": "assets/voices/voice_36.wav"
+                }
+            ]
         }
     }
 }
