@@ -11,12 +11,44 @@
             "name": "Персонаж",
             "options": [
                 {
-                    "name": "Персонаж 1",
-                    "image": "assets/body/character1.png"
+                    "name": "Персонаж 01",
+                    "image": "assets/body/body_01.png"
                 },
                 {
-                    "name": "Персонаж 2",
-                    "image": "assets/body/character2.png"
+                    "name": "Персонаж 02",
+                    "image": "assets/body/body_02.png"
+                },
+                {
+                    "name": "Персонаж 03",
+                    "image": "assets/body/body_03.png"
+                },
+                {
+                    "name": "Персонаж 04",
+                    "image": "assets/body/body_04.png"
+                },
+                {
+                    "name": "Персонаж 05",
+                    "image": "assets/body/body_05.png"
+                },
+                {
+                    "name": "Персонаж 06",
+                    "image": "assets/body/body_06.png"
+                },
+                {
+                    "name": "Персонаж 07",
+                    "image": "assets/body/body_07.png"
+                },
+                {
+                    "name": "Персонаж 08",
+                    "image": "assets/body/body_08.png"
+                },
+                {
+                    "name": "Персонаж 09",
+                    "image": "assets/body/body_09.png"
+                },
+                {
+                    "name": "Персонаж 10",
+                    "image": "assets/body/body_10.png"
                 }
             ]
         },
@@ -25,12 +57,28 @@
             "name": "Глаза",
             "options": [
                 {
-                    "name": "Глаза 1",
-                    "image": "assets/eyes/eyes1.png"
+                    "name": "Глаза 01",
+                    "image": "assets/eyes/eyes_01.png"
                 },
                 {
-                    "name": "Глаза 2",
-                    "image": "assets/eyes/eyes2.png"
+                    "name": "Глаза 02",
+                    "image": "assets/eyes/eyes_02.png"
+                },
+                {
+                    "name": "Глаза 03",
+                    "image": "assets/eyes/eyes_03.png"
+                },
+                {
+                    "name": "Глаза 04",
+                    "image": "assets/eyes/eyes_04.png"
+                },
+                {
+                    "name": "Глаза 05",
+                    "image": "assets/eyes/eyes_05.png"
+                },
+                {
+                    "name": "Глаза 06",
+                    "image": "assets/eyes/eyes_06.png"
                 }
             ]
         },
@@ -39,15 +87,130 @@
             "name": "Аксессуар",
             "options": [
                 {
-                    "name": "Аксессуар 1",
-                    "image": "assets/accessory/accessory1.png"
+                    "name": "Аксессуар 01",
+                    "image": "assets/accessory/accessory_01.png"
                 },
                 {
-                    "name": "Аксессуар 2",
-                    "image": "assets/accessory/accessory2.png"
+                    "name": "Аксессуар 02",
+                    "image": "assets/accessory/accessory_02.png"
+                },
+                {
+                    "name": "Аксессуар 03",
+                    "image": "assets/accessory/accessory_03.png"
+                },
+                {
+                    "name": "Аксессуар 04",
+                    "image": "assets/accessory/accessory_04.png"
+                },
+                {
+                    "name": "Аксессуар 05",
+                    "image": "assets/accessory/accessory_05.png"
+                },
+                {
+                    "name": "Аксессуар 06",
+                    "image": "assets/accessory/accessory_06.png"
+                },
+                {
+                    "name": "Аксессуар 07",
+                    "image": "assets/accessory/accessory_07.png"
+                },
+                {
+                    "name": "Аксессуар 08",
+                    "image": "assets/accessory/accessory_08.png"
+                },
+                {
+                    "name": "Аксессуар 09",
+                    "image": "assets/accessory/accessory_09.png"
+                },
+                {
+                    "name": "Аксессуар 10",
+                    "image": "assets/accessory/accessory_10.png"
+                },
+                {
+                    "name": "Аксессуар 11",
+                    "image": "assets/accessory/accessory_11.png"
+                },
+                {
+                    "name": "Аксессуар 12",
+                    "image": "assets/accessory/accessory_12.png"
+                },
+                {
+                    "name": "Аксессуар 13",
+                    "image": "assets/accessory/accessory_13.png"
+                },
+                {
+                    "name": "Аксессуар 14",
+                    "image": "assets/accessory/accessory_14.png"
+                },
+                {
+                    "name": "Аксессуар 15",
+                    "image": "assets/accessory/accessory_15.png"
+                },
+                {
+                    "name": "Аксессуар 16",
+                    "image": "assets/accessory/accessory_16.png"
+                },
+                {
+                    "name": "Аксессуар 17",
+                    "image": "assets/accessory/accessory_17.png"
+                },
+                {
+                    "name": "Аксессуар 18",
+                    "image": "assets/accessory/accessory_18.png"
+                },
+                {
+                    "name": "Аксессуар 19",
+                    "image": "assets/accessory/accessory_19.png"
+                },
+                {
+                    "name": "Аксессуар 20",
+                    "image": "assets/accessory/accessory_20.png"
+                },
+                {
+                    "name": "Аксессуар 21",
+                    "image": "assets/accessory/accessory_21.png"
+                },
+                {
+                    "name": "Аксессуар 22",
+                    "image": "assets/accessory/accessory_22.png"
+                },
+                {
+                    "name": "Аксессуар 23",
+                    "image": "assets/accessory/accessory_23.png"
+                },
+                {
+                    "name": "Аксессуар 24",
+                    "image": "assets/accessory/accessory_24.png"
+                },
+                {
+                    "name": "Аксессуар 25",
+                    "image": "assets/accessory/accessory_25.png"
+                },
+                {
+                    "name": "Аксессуар 26",
+                    "image": "assets/accessory/accessory_26.png"
+                },
+                {
+                    "name": "Аксессуар 27",
+                    "image": "assets/accessory/accessory_27.png"
+                },
+                {
+                    "name": "Аксессуар 28",
+                    "image": "assets/accessory/accessory_28.png"
+                },
+                {
+                    "name": "Аксессуар 29",
+                    "image": "assets/accessory/accessory_29.png"
+                },
+                {
+                    "name": "Аксессуар 30",
+                    "image": "assets/accessory/accessory_30.png"
+                },
+                {
+                    "name": "Аксессуар 31",
+                    "image": "assets/accessory/accessory_31.png"
                 }
             ]
         }
-
     }
 }
