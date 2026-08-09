@@ -85,6 +85,10 @@
             "name": "Одежда",
             "options": [
                 {
+                    "name": "Голый",
+                    "image": "assets/cloth/cloth_00.png"
+                },
+                {
                     "name": "Пивозавр",
                     "image": "assets/cloth/cloth_01.png"
                 },
@@ -117,6 +121,10 @@
         "accessory": {
             "name": "Аксессуар",
             "options": [
+                {
+                    "name": "Ничего",
+                    "image": "assets/accessory/accessory_00.png"
+                },
                 {
                     "name": "Бабочка",
                     "image": "assets/accessory/accessory_01.png"
@@ -162,6 +170,10 @@
         "hat": {
             "name": "Шапка",
             "options": [
+                {
+                    "name": "Ничего",
+                    "image": "assets/hat/hat_00.png"
+                },
                 {
                     "name": "Цилиндр",
                     "image": "assets/hat/hat_01.png"
