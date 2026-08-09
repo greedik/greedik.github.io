@@ -52,6 +52,7 @@
                 }
             ]
         },
+        
         "eyes": {
             "name": "Глаза",
             "options": [
@@ -81,6 +82,7 @@
                 }
             ]
         },
+        
         "cloth": {
             "name": "Одежда",
             "options": [
@@ -115,9 +117,14 @@
                 {
                     "name": "Формула 1",
                     "image": "assets/cloth/cloth_07.png"
+                },
+                {
+                    "name": "Деловой косюм",
+                    "image": "assets/cloth/cloth_08.png"
                 }
             ]
         },
+        
         "accessory": {
             "name": "Аксессуар",
             "options": [
@@ -167,6 +174,7 @@
                 }
             ]
         },
+        
         "hat": {
             "name": "Шапка",
             "options": [
