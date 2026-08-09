@@ -2,38 +2,18 @@ const CONFIG_URL = 'data/layers.json';
 
 let config = null;
 
-/*
- * Текущее выбранное состояние.
- *
- * Например:
- *
- * {
- *     body: 0,
- *     eyes: 1,
- *     accessory: 0
- * }
- */
 const state = {};
 
+let currentAudio = null;
 
-/*
- * Элементы интерфейса
- */
 const controlsElement = document.getElementById('controls');
 const stageElement = document.getElementById('stage');
 const statusElement = document.getElementById('status');
 const downloadButton = document.getElementById('downloadButton');
 
-
-/*
- * Запуск приложения
- */
 document.addEventListener('DOMContentLoaded', init);
 
 
-/*
- * Загрузка конфигурации
- */
 async function init() {
 
     try {
@@ -77,9 +57,6 @@ async function init() {
 }
 
 
-/*
- * Проверка структуры JSON
- */
 function validateConfig() {
 
     if (!config) {
@@ -118,14 +95,14 @@ function validateConfig() {
 }
 
 
-/*
- * Начальное состояние.
- *
- * Для каждой категории выбирается первый вариант.
- */
 function initializeState() {
 
-    config.layerOrder.forEach(category => {
+    /*
+     * Инициализируем только графические категории
+     * и голос.
+     */
+
+    Object.keys(config.categories).forEach(category => {
 
         const options = config.categories[category].options;
 
@@ -136,116 +113,237 @@ function initializeState() {
 }
 
 
-/*
- * Создание панели управления
- */
 function createControls() {
 
     controlsElement.innerHTML = '';
 
+    /*
+     * Сначала создаём графические категории
+     * в порядке layerOrder.
+     */
+
     config.layerOrder.forEach(category => {
 
-        const categoryData = config.categories[category];
-
-        const control = document.createElement('div');
-
-        control.className = 'control';
-
-        const label = document.createElement('label');
-
-        label.textContent = categoryData.name || category;
-
-        control.appendChild(label);
-
-
-        const row = document.createElement('div');
-
-        row.className = 'row';
-
-
-        /*
-         * Кнопка назад
-         */
-        const previousButton = document.createElement('button');
-
-        previousButton.type = 'button';
-
-        previousButton.textContent = '←';
-
-        previousButton.title = 'Предыдущий вариант';
-
-        previousButton.addEventListener('click', () => {
-
-            changeOption(category, -1);
-
-        });
-
-
-        /*
-         * Select
-         */
-        const select = document.createElement('select');
-
-        select.dataset.category = category;
-
-        categoryData.options.forEach((option, index) => {
-
-            const optionElement = document.createElement('option');
-
-            optionElement.value = index;
-
-            optionElement.textContent = option.name;
-
-            select.appendChild(optionElement);
-
-        });
-
-
-        select.addEventListener('change', event => {
-
-            const index = Number(event.target.value);
-
-            state[category] = index;
-
-            render();
-
-        });
-
-
-        /*
-         * Кнопка вперёд
-         */
-        const nextButton = document.createElement('button');
-
-        nextButton.type = 'button';
-
-        nextButton.textContent = '→';
-
-        nextButton.title = 'Следующий вариант';
-
-        nextButton.addEventListener('click', () => {
-
-            changeOption(category, 1);
-
-        });
-
-
-        row.appendChild(previousButton);
-        row.appendChild(select);
-        row.appendChild(nextButton);
-
-        control.appendChild(row);
-
-        controlsElement.appendChild(control);
+        createCategoryControl(category);
 
     });
+
+
+    /*
+     * Голос располагаем после всех слоёв.
+     */
+
+    if (config.categories.voice) {
+
+        createVoiceControl();
+
+    }
 
 }
 
 
-/*
- * Переключение варианта категории
- */
+function createCategoryControl(category) {
+
+    const categoryData = config.categories[category];
+
+    const control = document.createElement('div');
+
+    control.className = 'control';
+
+    const label = document.createElement('label');
+
+    label.textContent = categoryData.name || category;
+
+    control.appendChild(label);
+
+    const row = document.createElement('div');
+
+    row.className = 'row';
+
+
+    const previousButton = document.createElement('button');
+
+    previousButton.type = 'button';
+
+    previousButton.textContent = '←';
+
+    previousButton.title = 'Предыдущий вариант';
+
+    previousButton.addEventListener('click', () => {
+
+        changeOption(category, -1);
+
+    });
+
+
+    const select = document.createElement('select');
+
+    select.dataset.category = category;
+
+    categoryData.options.forEach((option, index) => {
+
+        const optionElement = document.createElement('option');
+
+        optionElement.value = index;
+
+        optionElement.textContent = option.name;
+
+        select.appendChild(optionElement);
+
+    });
+
+
+    select.addEventListener('change', event => {
+
+        state[category] = Number(event.target.value);
+
+        render();
+
+    });
+
+
+    const nextButton = document.createElement('button');
+
+    nextButton.type = 'button';
+
+    nextButton.textContent = '→';
+
+    nextButton.title = 'Следующий вариант';
+
+    nextButton.addEventListener('click', () => {
+
+        changeOption(category, 1);
+
+    });
+
+
+    row.appendChild(previousButton);
+    row.appendChild(select);
+    row.appendChild(nextButton);
+
+    control.appendChild(row);
+
+    controlsElement.appendChild(control);
+
+}
+
+
+function createVoiceControl() {
+
+    const category = 'voice';
+
+    const categoryData = config.categories.voice;
+
+    const control = document.createElement('div');
+
+    control.className = 'control voice-control';
+
+
+    const label = document.createElement('label');
+
+    label.textContent = categoryData.name || 'Голос';
+
+    control.appendChild(label);
+
+
+    const row = document.createElement('div');
+
+    row.className = 'row';
+
+
+    const previousButton = document.createElement('button');
+
+    previousButton.type = 'button';
+
+    previousButton.textContent = '←';
+
+    previousButton.title = 'Предыдущий голос';
+
+    previousButton.addEventListener('click', () => {
+
+        stopAudio();
+
+        changeOption(category, -1);
+
+    });
+
+
+    const select = document.createElement('select');
+
+    select.dataset.category = category;
+
+    categoryData.options.forEach((option, index) => {
+
+        const optionElement = document.createElement('option');
+
+        optionElement.value = index;
+
+        optionElement.textContent = option.name;
+
+        select.appendChild(optionElement);
+
+    });
+
+
+    select.addEventListener('change', event => {
+
+        stopAudio();
+
+        state[category] = Number(event.target.value);
+
+    });
+
+
+    const nextButton = document.createElement('button');
+
+    nextButton.type = 'button';
+
+    nextButton.textContent = '→';
+
+    nextButton.title = 'Следующий голос';
+
+    nextButton.addEventListener('click', () => {
+
+        stopAudio();
+
+        changeOption(category, 1);
+
+    });
+
+
+    row.appendChild(previousButton);
+    row.appendChild(select);
+    row.appendChild(nextButton);
+
+    control.appendChild(row);
+
+
+    /*
+     * Кнопка прослушивания
+     */
+
+    const playButton = document.createElement('button');
+
+    playButton.type = 'button';
+
+    playButton.className = 'voice-play';
+
+    playButton.textContent = '▶ Прослушать';
+
+    playButton.addEventListener('click', () => {
+
+        playSelectedVoice(playButton);
+
+    });
+
+
+    control.appendChild(playButton);
+
+    controlsElement.appendChild(control);
+
+}
+
+
 function changeOption(category, direction) {
 
     const options = config.categories[category].options;
@@ -258,13 +356,6 @@ function changeOption(category, direction) {
 
     index += direction;
 
-
-    /*
-     * Зацикливание:
-     *
-     * первый → последний
-     * последний → первый
-     */
     if (index < 0) {
         index = options.length - 1;
     }
@@ -272,7 +363,6 @@ function changeOption(category, direction) {
     if (index >= options.length) {
         index = 0;
     }
-
 
     state[category] = index;
 
@@ -283,9 +373,6 @@ function changeOption(category, direction) {
 }
 
 
-/*
- * Синхронизация select
- */
 function updateSelect(category) {
 
     const select = controlsElement.querySelector(
@@ -301,9 +388,6 @@ function updateSelect(category) {
 }
 
 
-/*
- * Отрисовка изображения
- */
 function render() {
 
     if (!config) {
@@ -313,12 +397,6 @@ function render() {
     stageElement.innerHTML = '';
 
 
-    /*
-     * Каждый слой получает отдельный <img>.
-     *
-     * Порядок добавления элементов соответствует
-     * layerOrder из JSON.
-     */
     config.layerOrder.forEach(category => {
 
         const categoryData = config.categories[category];
@@ -351,10 +429,6 @@ function render() {
         image.dataset.index = index;
 
 
-        /*
-         * Если изображение не найдено,
-         * выводим ошибку в консоль.
-         */
         image.addEventListener('error', () => {
 
             console.error(
@@ -363,15 +437,6 @@ function render() {
 
             setStatus(
                 `Не удалось загрузить: ${selected.name}`
-            );
-
-        });
-
-
-        image.addEventListener('load', () => {
-
-            setStatus(
-                `Выбрано: ${getCurrentDescription()}`
             );
 
         });
@@ -389,9 +454,6 @@ function render() {
 }
 
 
-/*
- * Формирование описания текущего состояния
- */
 function getCurrentDescription() {
 
     const parts = [];
@@ -421,22 +483,138 @@ function getCurrentDescription() {
 }
 
 
-/*
- * Скачать результат.
- *
- * Canvas собирает все PNG в один файл.
- */
+async function playSelectedVoice(button) {
+
+    if (!config.categories.voice) {
+        return;
+    }
+
+    const options = config.categories.voice.options;
+
+    const index = state.voice;
+
+    if (
+        index === undefined ||
+        index < 0 ||
+        index >= options.length
+    ) {
+        return;
+    }
+
+    const selected = options[index];
+
+    if (!selected.audio) {
+
+        setStatus('У выбранного голоса нет аудиофайла.');
+
+        return;
+
+    }
+
+
+    /*
+     * Если сейчас что-то играет —
+     * останавливаем.
+     */
+
+    if (currentAudio) {
+
+        stopAudio();
+
+        /*
+         * Если пользователь нажал кнопку во время
+         * воспроизведения — запускаем заново.
+         */
+
+    }
+
+
+    currentAudio = new Audio(selected.audio);
+
+
+    button.textContent = '⏹ Остановить';
+
+
+    currentAudio.addEventListener('ended', () => {
+
+        button.textContent = '▶ Прослушать';
+
+        currentAudio = null;
+
+    });
+
+
+    currentAudio.addEventListener('error', () => {
+
+        button.textContent = '▶ Прослушать';
+
+        setStatus(
+            `Не удалось воспроизвести: ${selected.name}`
+        );
+
+        currentAudio = null;
+
+    });
+
+
+    try {
+
+        await currentAudio.play();
+
+        setStatus(
+            `Воспроизводится: ${selected.name}`
+        );
+
+    } catch (error) {
+
+        console.error(error);
+
+        button.textContent = '▶ Прослушать';
+
+        currentAudio = null;
+
+        setStatus(
+            'Браузер не разрешил воспроизведение аудио.'
+        );
+
+    }
+
+}
+
+
+function stopAudio() {
+
+    if (!currentAudio) {
+        return;
+    }
+
+    currentAudio.pause();
+
+    currentAudio.currentTime = 0;
+
+    currentAudio = null;
+
+
+    const button = document.querySelector(
+        '.voice-play'
+    );
+
+    if (button) {
+        button.textContent = '▶ Прослушать';
+    }
+
+}
+
+
 async function downloadPNG() {
 
     if (!config) {
         return;
     }
 
-
     const images = Array.from(
         stageElement.querySelectorAll('img')
     );
-
 
     if (!images.length) {
 
@@ -446,26 +624,16 @@ async function downloadPNG() {
 
     }
 
-
     setStatus('Подготовка PNG...');
 
 
     try {
 
-        /*
-         * Ждём загрузки всех изображений.
-         */
         await Promise.all(
             images.map(waitForImage)
         );
 
 
-        /*
-         * Определяем размеры изображения.
-         *
-         * Для первой картинки используем её
-         * естественное разрешение.
-         */
         const firstImage = images[0];
 
         const width = firstImage.naturalWidth;
@@ -473,9 +641,11 @@ async function downloadPNG() {
 
 
         if (!width || !height) {
+
             throw new Error(
                 'Не удалось определить размер изображения.'
             );
+
         }
 
 
@@ -488,9 +658,6 @@ async function downloadPNG() {
         const ctx = canvas.getContext('2d');
 
 
-        /*
-         * Рисуем каждый слой.
-         */
         for (const image of images) {
 
             ctx.drawImage(
@@ -504,18 +671,12 @@ async function downloadPNG() {
         }
 
 
-        /*
-         * Формируем имя файла.
-         */
         const filename =
             'character-' +
             createFilename() +
             '.png';
 
 
-        /*
-         * Создаём ссылку на готовый PNG.
-         */
         canvas.toBlob(blob => {
 
             if (!blob) {
@@ -565,13 +726,15 @@ async function downloadPNG() {
 }
 
 
-/*
- * Ожидание загрузки изображения
- */
 function waitForImage(image) {
 
-    if (image.complete && image.naturalWidth > 0) {
+    if (
+        image.complete &&
+        image.naturalWidth > 0
+    ) {
+
         return Promise.resolve();
+
     }
 
     return new Promise((resolve, reject) => {
@@ -597,9 +760,6 @@ function waitForImage(image) {
 }
 
 
-/*
- * Создание короткого имени файла
- */
 function createFilename() {
 
     const parts = [];
@@ -624,14 +784,29 @@ function createFilename() {
 
     });
 
+
+    /*
+     * Добавляем выбранный голос
+     * в имя файла.
+     */
+
+    if (
+        config.categories.voice &&
+        state.voice !== undefined
+    ) {
+
+        parts.push(
+            `voice-${state.voice + 1}`
+        );
+
+    }
+
+
     return parts.join('_');
 
 }
 
 
-/*
- * Вывод статуса
- */
 function setStatus(message) {
 
     statusElement.textContent = message;
@@ -639,9 +814,6 @@ function setStatus(message) {
 }
 
 
-/*
- * Безопасный вывод текста ошибки
- */
 function escapeHtml(value) {
 
     return String(value)
@@ -654,9 +826,4 @@ function escapeHtml(value) {
 }
 
 
-/*
- * Экспортируем функцию глобально,
- * чтобы при необходимости её можно было
- * вызвать из HTML.
- */
 window.downloadPNG = downloadPNG;
