@@ -3,40 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Customizer</title>
 
-    <style>
-        body {
-            margin: 0;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: #1e1e1e;
-            color: white;
-            font-family: Arial, sans-serif;
-        }
+    <title>Character Creator</title>
 
-        .container {
-            text-align: center;
-        }
-
-        h1 {
-            margin-bottom: 10px;
-        }
-
-        p {
-            color: #aaa;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<div class="container">
-    <h1>Image Customizer</h1>
-    <p>GitHub Pages работает.</p>
+<div class="app">
+
+    <h1>Character Creator</h1>
+
+    <div class="layout">
+
+        <div class="panel" id="controls">
+            <div class="loading">
+                Загрузка конфигурации...
+            </div>
+        </div>
+
+        <div class="preview">
+
+            <div class="stage" id="stage">
+                <!-- PNG-слои добавляются через JavaScript -->
+            </div>
+
+            <div class="status" id="status"></div>
+
+            <button class="download" id="downloadButton">
+                Скачать PNG
+            </button>
+
+        </div>
+
+    </div>
+
 </div>
+
+<script src="js/app.js"></script>
 
 </body>
 </html>
