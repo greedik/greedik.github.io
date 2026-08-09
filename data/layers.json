@@ -6,9 +6,7 @@
         "accessory",
         "hat"
     ],
-
     "categories": {
-
         "body": {
             "name": "Цвет",
             "options": [
@@ -54,7 +52,6 @@
                 }
             ]
         },
-
         "eyes": {
             "name": "Глаза",
             "options": [
@@ -84,7 +81,6 @@
                 }
             ]
         },
-
         "cloth": {
             "name": "Одежда",
             "options": [
@@ -118,7 +114,6 @@
                 }
             ]
         },
-
         "accessory": {
             "name": "Аксессуар",
             "options": [
@@ -164,7 +159,6 @@
                 }
             ]
         },
-
         "hat": {
             "name": "Шапка",
             "options": [
