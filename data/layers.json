@@ -2,52 +2,54 @@
     "layerOrder": [
         "body",
         "eyes",
-        "accessory"
+        "cloth",
+        "accessory",
+        "hat"
     ],
 
     "categories": {
 
         "body": {
-            "name": "Персонаж",
+            "name": "Цвет",
             "options": [
                 {
-                    "name": "Персонаж 01",
+                    "name": "Лайм",
                     "image": "assets/body/body_01.png"
                 },
                 {
-                    "name": "Персонаж 02",
+                    "name": "Оранжевый",
                     "image": "assets/body/body_02.png"
                 },
                 {
-                    "name": "Персонаж 03",
+                    "name": "Зелёный",
                     "image": "assets/body/body_03.png"
                 },
                 {
-                    "name": "Персонаж 04",
+                    "name": "Синий",
                     "image": "assets/body/body_04.png"
                 },
                 {
-                    "name": "Персонаж 05",
+                    "name": "Красный",
                     "image": "assets/body/body_05.png"
                 },
                 {
-                    "name": "Персонаж 06",
+                    "name": "Розовый",
                     "image": "assets/body/body_06.png"
                 },
                 {
-                    "name": "Персонаж 07",
+                    "name": "Голубой",
                     "image": "assets/body/body_07.png"
                 },
                 {
-                    "name": "Персонаж 08",
+                    "name": "Белый",
                     "image": "assets/body/body_08.png"
                 },
                 {
-                    "name": "Персонаж 09",
+                    "name": "Чёрный",
                     "image": "assets/body/body_09.png"
                 },
                 {
-                    "name": "Персонаж 10",
+                    "name": "Фиолетовый",
                     "image": "assets/body/body_10.png"
                 }
             ]
@@ -83,132 +85,152 @@
             ]
         },
 
+        "cloth": {
+            "name": "Одежда",
+            "options": [
+                {
+                    "name": "Пивозавр",
+                    "image": "assets/cloth/cloth_01.png"
+                },
+                {
+                    "name": "Ефрейтор",
+                    "image": "assets/cloth/cloth_02.png"
+                },
+                {
+                    "name": "ДМС",
+                    "image": "assets/cloth/cloth_03.png"
+                },
+                {
+                    "name": "Майка",
+                    "image": "assets/cloth/cloth_04.png"
+                },
+                {
+                    "name": "Месси",
+                    "image": "assets/cloth/cloth_05.png"
+                },
+                {
+                    "name": "Адидас",
+                    "image": "assets/cloth/cloth_06.png"
+                },
+                {
+                    "name": "Формула 1",
+                    "image": "assets/cloth/cloth_07.png"
+                }
+            ]
+        },
+
         "accessory": {
             "name": "Аксессуар",
             "options": [
                 {
-                    "name": "Аксессуар 01",
+                    "name": "Бабочка",
                     "image": "assets/accessory/accessory_01.png"
                 },
                 {
-                    "name": "Аксессуар 02",
+                    "name": "Леденец",
                     "image": "assets/accessory/accessory_02.png"
                 },
                 {
-                    "name": "Аксессуар 03",
+                    "name": "Умник",
                     "image": "assets/accessory/accessory_03.png"
                 },
                 {
-                    "name": "Аксессуар 04",
+                    "name": "Красный галстук",
                     "image": "assets/accessory/accessory_04.png"
                 },
                 {
-                    "name": "Аксессуар 05",
+                    "name": "Вейп",
                     "image": "assets/accessory/accessory_05.png"
                 },
                 {
-                    "name": "Аксессуар 06",
+                    "name": "Персона",
                     "image": "assets/accessory/accessory_06.png"
                 },
                 {
-                    "name": "Аксессуар 07",
+                    "name": "Пиво",
                     "image": "assets/accessory/accessory_07.png"
                 },
                 {
-                    "name": "Аксессуар 08",
+                    "name": "Пиксельные очки",
                     "image": "assets/accessory/accessory_08.png"
                 },
                 {
-                    "name": "Аксессуар 09",
+                    "name": "Глок",
                     "image": "assets/accessory/accessory_09.png"
                 },
                 {
-                    "name": "Аксессуар 10",
+                    "name": "Гурен Лагн",
                     "image": "assets/accessory/accessory_10.png"
+                }
+            ]
+        },
+
+        "hat": {
+            "name": "Шапка",
+            "options": [
+                {
+                    "name": "Цилиндр",
+                    "image": "assets/hat/hat_01.png"
                 },
                 {
-                    "name": "Аксессуар 11",
-                    "image": "assets/accessory/accessory_11.png"
+                    "name": "Кепка с пропеллером",
+                    "image": "assets/hat/hat_02.png"
                 },
                 {
-                    "name": "Аксессуар 12",
-                    "image": "assets/accessory/accessory_12.png"
+                    "name": "Кепка GAZ",
+                    "image": "assets/hat/hat_03.png"
                 },
                 {
-                    "name": "Аксессуар 13",
-                    "image": "assets/accessory/accessory_13.png"
+                    "name": "Кепка Рыбака",
+                    "image": "assets/hat/hat_04.png"
                 },
                 {
-                    "name": "Аксессуар 14",
-                    "image": "assets/accessory/accessory_14.png"
+                    "name": "Кепка Bass Pro Shop",
+                    "image": "assets/hat/hat_05.png"
                 },
                 {
-                    "name": "Аксессуар 15",
-                    "image": "assets/accessory/accessory_15.png"
+                    "name": "Кепка Fatal Fury",
+                    "image": "assets/hat/hat_06.png"
                 },
                 {
-                    "name": "Аксессуар 16",
-                    "image": "assets/accessory/accessory_16.png"
+                    "name": "Кепка New York Yankees",
+                    "image": "assets/hat/hat_07.png"
                 },
                 {
-                    "name": "Аксессуар 17",
-                    "image": "assets/accessory/accessory_17.png"
+                    "name": "Кепка назад",
+                    "image": "assets/hat/hat_08.png"
                 },
                 {
-                    "name": "Аксессуар 18",
-                    "image": "assets/accessory/accessory_18.png"
+                    "name": "Мышиные уши",
+                    "image": "assets/hat/hat_09.png"
                 },
                 {
-                    "name": "Аксессуар 19",
-                    "image": "assets/accessory/accessory_19.png"
+                    "name": "Кепка M.Bison",
+                    "image": "assets/hat/hat_10.png"
                 },
                 {
-                    "name": "Аксессуар 20",
-                    "image": "assets/accessory/accessory_20.png"
+                    "name": "Каска",
+                    "image": "assets/hat/hat_11.png"
                 },
                 {
-                    "name": "Аксессуар 21",
-                    "image": "assets/accessory/accessory_21.png"
+                    "name": "Гибус",
+                    "image": "assets/hat/hat_12.png"
                 },
                 {
-                    "name": "Аксессуар 22",
-                    "image": "assets/accessory/accessory_22.png"
+                    "name": "Ковбойская шляпа",
+                    "image": "assets/hat/hat_13.png"
                 },
                 {
-                    "name": "Аксессуар 23",
-                    "image": "assets/accessory/accessory_23.png"
+                    "name": "Тактический шлем",
+                    "image": "assets/hat/hat_14.png"
                 },
                 {
-                    "name": "Аксессуар 24",
-                    "image": "assets/accessory/accessory_24.png"
+                    "name": "Острый козырёк",
+                    "image": "assets/hat/hat_15.png"
                 },
                 {
-                    "name": "Аксессуар 25",
-                    "image": "assets/accessory/accessory_25.png"
-                },
-                {
-                    "name": "Аксессуар 26",
-                    "image": "assets/accessory/accessory_26.png"
-                },
-                {
-                    "name": "Аксессуар 27",
-                    "image": "assets/accessory/accessory_27.png"
-                },
-                {
-                    "name": "Аксессуар 28",
-                    "image": "assets/accessory/accessory_28.png"
-                },
-                {
-                    "name": "Аксессуар 29",
-                    "image": "assets/accessory/accessory_29.png"
-                },
-                {
-                    "name": "Аксессуар 30",
-                    "image": "assets/accessory/accessory_30.png"
-                },
-                {
-                    "name": "Аксессуар 31",
-                    "image": "assets/accessory/accessory_31.png"
+                    "name": "Алекс SF6",
+                    "image": "assets/hat/hat_16.png"
                 }
             ]
         }
