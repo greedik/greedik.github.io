@@ -196,3 +196,11 @@ select {
     }
 
 }
+.voice-play {
+    margin-top: 8px;
+    background: #3c4043;
+}
+
+.voice-play:hover {
+    background: #4b4f52;
+}
