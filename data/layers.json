@@ -155,7 +155,7 @@
                     "image": "assets/accessory/accessory_05.png"
                 },
                 {
-                    "name": "Персона",
+                    "name": "Гурен Лагн очки",
                     "image": "assets/accessory/accessory_06.png"
                 },
                 {
@@ -169,10 +169,6 @@
                 {
                     "name": "Глок",
                     "image": "assets/accessory/accessory_09.png"
-                },
-                {
-                    "name": "Гурен Лагн",
-                    "image": "assets/accessory/accessory_10.png"
                 }
             ]
         },
@@ -248,6 +244,10 @@
                     "name": "Алекс SF6",
                     "image": "assets/hat/hat_16.png"
                 }
+                {
+                    "name": "Джокер Персона 5",
+                    "image": "assets/hat/hat_17.png"
+                }
             ]
             
         },
@@ -256,15 +256,22 @@
             "name": "Экстра",
             "options": [
                 {
+                    "name": "Ничего",
+                    "image": "assets/special/special_01.png"
+                },
+                {
                     "name": "Вертолёт",
                     "image": "assets/special/special_01.png"
                 },
                 {
                     "name": "Юми",
                     "image": "assets/special/special_02.png"
+                },
+                {
+                    "name": "Супер саян",
+                    "image": "assets/special/special_01.png"
                 }
             ]
-            
         },
         
         "voice": {
