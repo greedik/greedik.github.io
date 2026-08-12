@@ -257,7 +257,7 @@
             "options": [
                 {
                     "name": "Ничего",
-                    "image": "assets/special/special_01.png"
+                    "image": "assets/special/special_00.png"
                 },
                 {
                     "name": "Вертолёт",
@@ -269,7 +269,7 @@
                 },
                 {
                     "name": "Супер саян",
-                    "image": "assets/special/special_01.png"
+                    "image": "assets/special/special_03.png"
                 }
             ]
         },
