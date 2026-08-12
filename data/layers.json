@@ -4,7 +4,8 @@
         "eyes",
         "cloth",
         "accessory",
-        "hat"
+        "hat",
+        "special"
     ],
     "categories": {
         "body": {
@@ -245,6 +246,21 @@
                 {
                     "name": "Алекс SF6",
                     "image": "assets/hat/hat_16.png"
+                }
+            ]
+            
+        },
+
+        "special": {
+            "name": "Экстра",
+            "options": [
+                {
+                    "name": "Вертолёт",
+                    "image": "assets/hat/special_01.png"
+                },
+                {
+                    "name": "Юми",
+                    "image": "assets/hat/special_02.png"
                 }
             ]
             
