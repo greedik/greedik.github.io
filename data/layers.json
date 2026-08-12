@@ -257,11 +257,11 @@
             "options": [
                 {
                     "name": "Вертолёт",
-                    "image": "assets/hat/special_01.png"
+                    "image": "assets/special/special_01.png"
                 },
                 {
                     "name": "Юми",
-                    "image": "assets/hat/special_02.png"
+                    "image": "assets/special/special_02.png"
                 }
             ]
             
