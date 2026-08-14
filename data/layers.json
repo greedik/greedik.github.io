@@ -123,6 +123,10 @@
                 {
                     "name": "Белый пиджак",
                     "image": "assets/cloth/cloth_08.png"
+                },
+                {
+                    "name": "Чёрный плащ (Kingdom Hearts)",
+                    "image": "assets/cloth/cloth_09.png"
                 }
             ]
         },
