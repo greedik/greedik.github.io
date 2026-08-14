@@ -3,8 +3,8 @@
         "body",
         "eyes",
         "cloth",
-        "accessory",
         "hat",
+        "accessory",
         "special"
     ],
     
@@ -126,53 +126,7 @@
                 }
             ]
         },
-        
-        "accessory": {
-            "name": "Аксессуар",
-            "options": [
-                {
-                    "name": "Ничего",
-                    "image": "assets/accessory/accessory_00.png"
-                },
-                {
-                    "name": "Бабочка",
-                    "image": "assets/accessory/accessory_01.png"
-                },
-                {
-                    "name": "Леденец",
-                    "image": "assets/accessory/accessory_02.png"
-                },
-                {
-                    "name": "Умник",
-                    "image": "assets/accessory/accessory_03.png"
-                },
-                {
-                    "name": "Красный галстук",
-                    "image": "assets/accessory/accessory_04.png"
-                },
-                {
-                    "name": "Вейп",
-                    "image": "assets/accessory/accessory_05.png"
-                },
-                {
-                    "name": "Гурен Лагн очки",
-                    "image": "assets/accessory/accessory_06.png"
-                },
-                {
-                    "name": "Пиво",
-                    "image": "assets/accessory/accessory_07.png"
-                },
-                {
-                    "name": "Пиксельные очки",
-                    "image": "assets/accessory/accessory_08.png"
-                },
-                {
-                    "name": "Глок",
-                    "image": "assets/accessory/accessory_09.png"
-                }
-            ]
-        },
-        
+              
         "hat": {
             "name": "Шапка",
             "options": [
@@ -250,6 +204,52 @@
                 }
             ]
             
+        },
+
+        "accessory": {
+            "name": "Аксессуар",
+            "options": [
+                {
+                    "name": "Ничего",
+                    "image": "assets/accessory/accessory_00.png"
+                },
+                {
+                    "name": "Бабочка",
+                    "image": "assets/accessory/accessory_01.png"
+                },
+                {
+                    "name": "Леденец",
+                    "image": "assets/accessory/accessory_02.png"
+                },
+                {
+                    "name": "Умник",
+                    "image": "assets/accessory/accessory_03.png"
+                },
+                {
+                    "name": "Красный галстук",
+                    "image": "assets/accessory/accessory_04.png"
+                },
+                {
+                    "name": "Вейп",
+                    "image": "assets/accessory/accessory_05.png"
+                },
+                {
+                    "name": "Гурен Лагн очки",
+                    "image": "assets/accessory/accessory_06.png"
+                },
+                {
+                    "name": "Пиво",
+                    "image": "assets/accessory/accessory_07.png"
+                },
+                {
+                    "name": "Пиксельные очки",
+                    "image": "assets/accessory/accessory_08.png"
+                },
+                {
+                    "name": "Глок",
+                    "image": "assets/accessory/accessory_09.png"
+                }
+            ]
         },
 
         "special": {
