@@ -274,6 +274,10 @@
                 {
                     "name": "Супер саян",
                     "image": "assets/special/special_03.png"
+                },
+                {
+                    "name": "Санс",
+                    "image": "assets/special/special_04.png"
                 }
             ]
         },
@@ -380,6 +384,10 @@
                 {
                     "name": "Президент",
                     "audio": "assets/voices/voice_25.wav"
+                },
+                {
+                    "name": "Санс",
+                    "audio": "assets/voices/voice_37.wav"
                 },
                 {
                     "name": "Соник",
