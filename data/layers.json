@@ -287,151 +287,155 @@
             "options": [
                 {
                     "name": "Бандит (STALKER)",
-                    "audio": "assets/voices/voice_01.wav"
+                    "audio": "assets/voices/voice_Bandit.wav"
                 },
                 {
                     "name": "Доменик Торетто (Чонишвили)",
-                    "audio": "assets/voices/voice_02.wav"
+                    "audio": "assets/voices/voice_Chonishvili.wav"
                 },
                 {
                     "name": "Пророк (Crysis)",
-                    "audio": "assets/voices/voice_03.wav"
+                    "audio": "assets/voices/voice_Crysis.wav"
                 },
                 {
                     "name": "Дедпул (Гланц)",
-                    "audio": "assets/voices/voice_04.wav"
+                    "audio": "assets/voices/voice_Deadpool.wav"
                 },
                 {
                     "name": "Дональд Дак",
-                    "audio": "assets/voices/voice_05.wav"
+                    "audio": "assets/voices/voice_Donald.wav"
                 },
                 {
                     "name": "Гаврилов",
-                    "audio": "assets/voices/voice_06.wav"
+                    "audio": "assets/voices/voice_Gavrilov.wav"
                 },
                 {
                     "name": "Саня",
-                    "audio": "assets/voices/voice_07.wav"
+                    "audio": "assets/voices/voice_Gedrikon.wav"
                 },
                 {
                     "name": "Пряник (Шрек)",
-                    "audio": "assets/voices/voice_08.wav"
+                    "audio": "assets/voices/voice_Ginger.wav"
                 },
                 {
                     "name": "Гладос",
-                    "audio": "assets/voices/voice_09.wav"
+                    "audio": "assets/voices/voice_Glados.wav"
+                },
+                {
+                    "name": "Гуфи",
+                    "audio": "assets/voices/voice_Goofy.wav"
                 },
                 {
                     "name": "Мой",
-                    "audio": "assets/voices/voice_10.wav"
+                    "audio": "assets/voices/voice_Greedik.wav"
                 },
                 {
                     "name": "Хэви (Team Fortress 2)",
-                    "audio": "assets/voices/voice_11.wav"
+                    "audio": "assets/voices/voice_Heavy.wav"
                 },
                 {
                     "name": "Джокер",
-                    "audio": "assets/voices/voice_12.wav"
-                },
-                {
-                    "name": "Куплинов",
-                    "audio": "assets/voices/voice_13.wav"
-                },
-                {
-                    "name": "Микки Маус",
-                    "audio": "assets/voices/voice_14.wav"
-                },
-                {
-                    "name": "Нагиев",
-                    "audio": "assets/voices/voice_15.wav"
+                    "audio": "assets/voices/voice_Joker.wav"
                 },
                 {
                     "name": "Копатыч",
-                    "audio": "assets/voices/voice_16.wav"
+                    "audio": "assets/voices/voice_Kopatych.wav"
+                },
+                {
+                    "name": "Куплинов",
+                    "audio": "assets/voices/voice_Kuplinov.wav"
+                },
+                {
+                    "name": "Микки Маус",
+                    "audio": "assets/voices/voice_Mickey.wav"
+                },
+                {
+                    "name": "Нагиев",
+                    "audio": "assets/voices/voice_Nagiev.wav"
                 },
                 {
                     "name": "Мордекай (Обычный Мультик)",
-                    "audio": "assets/voices/voice_17.wav"
+                    "audio": "assets/voices/voice_Mordecai.wav"
                 },
                 {
                     "name": "Неко Арк",
-                    "audio": "assets/voices/voice_18.wav"
+                    "audio": "assets/voices/voice_Neco.wav"
                 },
                 {
                     "name": "Оптимус Прайм",
-                    "audio": "assets/voices/voice_19.wav"
+                    "audio": "assets/voices/voice_Optimus.wav"
                 },
                 {
                     "name": "Оксимирон",
-                    "audio": "assets/voices/voice_20.wav"
+                    "audio": "assets/voices/voice_Oxy.wav"
                 },
                 {
                     "name": "Папич",
-                    "audio": "assets/voices/voice_21.wav"
+                    "audio": "assets/voices/voice_Papich.wav"
                 },
                 {
                     "name": "Патрик",
-                    "audio": "assets/voices/voice_22.wav"
+                    "audio": "assets/voices/voice_Patrick.wav"
                 },
                 {
                     "name": "Питер Гриффин",
-                    "audio": "assets/voices/voice_23.wav"
+                    "audio": "assets/voices/voice_Peter.wav"
                 },
                 {
                     "name": "Пудж",
-                    "audio": "assets/voices/voice_24.wav"
+                    "audio": "assets/voices/voice_Pudge.wav"
                 },
                 {
                     "name": "Президент",
-                    "audio": "assets/voices/voice_25.wav"
+                    "audio": "assets/voices/voice_Putin.wav"
                 },
                 {
                     "name": "Санс",
-                    "audio": "assets/voices/voice_37.wav"
+                    "audio": "assets/voices/voice_Sans.wav"
                 },
                 {
                     "name": "Соник",
-                    "audio": "assets/voices/voice_26.wav"
+                    "audio": "assets/voices/voice_Sonic.wav"
                 },
                 {
                     "name": "Человек Паук",
-                    "audio": "assets/voices/voice_27.wav"
+                    "audio": "assets/voices/voice_Spider.wav"
                 },
                 {
                     "name": "Губка Боб",
-                    "audio": "assets/voices/voice_28.wav"
+                    "audio": "assets/voices/voice_Spongebob.wav"
                 },
                 {
                     "name": "Стратос",
-                    "audio": "assets/voices/voice_29.wav"
+                    "audio": "assets/voices/voice_Stratos.wav"
                 },
                 {
                     "name": "Трамп",
-                    "audio": "assets/voices/voice_30.wav"
+                    "audio": "assets/voices/voice_Trump.wav"
                 },
                 {
                     "name": "Братишкин",
-                    "audio": "assets/voices/voice_31.wav"
+                    "audio": "assets/voices/voice_Vova.wav"
                 },
                 {
                     "name": "Уолтер Уайт",
-                    "audio": "assets/voices/voice_32.wav"
+                    "audio": "assets/voices/voice_Walter.wav"
                 },
                 {
                     "name": "Винни Пух",
-                    "audio": "assets/voices/voice_33.wav"
+                    "audio": "assets/voices/voice_Winnie.wav"
                 },
                 {
                     "name": "Иван Золо",
-                    "audio": "assets/voices/voice_34.wav"
+                    "audio": "assets/voices/voice_Zolo.wav"
                 },
                 {
                     "name": "DeadP47",
-                    "audio": "assets/voices/voice_35.wav"
+                    "audio": "assets/voices/voice_deadp.wav"
                 },
                 {
                     "name": "itpedia",
-                    "audio": "assets/voices/voice_36.wav"
+                    "audio": "assets/voices/voice_itpedia.wav"
                 }
             ]
         }
