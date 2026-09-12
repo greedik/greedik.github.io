@@ -4,8 +4,13 @@
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #202124;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Days One, sans-serif;
+    text-shadow: 0px 0px 5px black;
+    background: linear-gradient(to bottom, #8fd0ff, #17314c);
     color: #fff;
 }
 
@@ -28,7 +33,7 @@ h1 {
 
 .panel,
 .preview {
-    background: #292a2d;
+    background: #0000007f;
     border-radius: 14px;
     padding: 20px;
 }
@@ -100,11 +105,12 @@ select {
 
     overflow: hidden;
 
-    background:
+    /*background:
         linear-gradient(45deg, #eee 25%, transparent 25%),
         linear-gradient(-45deg, #eee 25%, transparent 25%),
         linear-gradient(45deg, transparent 75%, #eee 75%),
         linear-gradient(-45deg, transparent 75%, #eee 75%);
+        #fff;
 
     background-size: 32px 32px;
 
@@ -114,7 +120,7 @@ select {
         16px -16px,
         -16px 0;
 
-    border-radius: 10px;
+    border-radius: 10px;*/
 }
 
 .stage img {

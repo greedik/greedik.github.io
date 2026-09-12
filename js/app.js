@@ -38,6 +38,10 @@ async function init() {
 
         render();
 
+        if (downloadButton) {
+            downloadButton.addEventListener('click', downloadPNG);
+        }
+
     } catch (error) {
 
         console.error(error);
