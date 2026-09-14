@@ -252,6 +252,18 @@
                 {
                     "name": "Глок",
                     "image": "assets/accessory/accessory_09.png"
+                },
+                {
+                    "name": "АК-47",
+                    "image": "assets/accessory/accessory_10.png"
+                },
+                {
+                    "name": "Космостарс",
+                    "image": "assets/accessory/accessory_11.png"
+                },
+                {
+                    "name": "Nintendo Chain",
+                    "image": "assets/accessory/accessory_12.png"
                 }
             ]
         },
