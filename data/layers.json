@@ -262,7 +262,7 @@
                     "image": "assets/accessory/accessory_11.png"
                 },
                 {
-                    "name": "Nintendo Chain",
+                    "name": "Цепь Nintendo",
                     "image": "assets/accessory/accessory_12.png"
                 }
             ]
@@ -436,6 +436,10 @@
                 {
                     "name": "Винни Пух",
                     "audio": "assets/voices/voice_Winnie.wav"
+                },
+                {
+                    "name": "Замай",
+                    "audio": "assets/voices/voice_Zamay.wav"
                 },
                 {
                     "name": "Иван Золо",
