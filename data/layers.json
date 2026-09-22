@@ -298,6 +298,10 @@
             "name": "Голос",
             "options": [
                 {
+                    "name": "Мр.Фокс (Антоник)",
+                    "audio": "assets/voices/voice_Antonik.wav"
+                },
+                {
                     "name": "Бандит (STALKER)",
                     "audio": "assets/voices/voice_Bandit.wav"
                 },
