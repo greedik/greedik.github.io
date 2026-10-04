@@ -430,6 +430,10 @@
                     "audio": "assets/voices/voice_Trump.wav"
                 },
                 {
+                    "name": "Lee Kei (DaiFiveTop, Апвоут)",
+                    "audio": "assets/voices/voice_Upvote.wav"
+                },
+                {
                     "name": "Братишкин",
                     "audio": "assets/voices/voice_Vova.wav"
                 },
