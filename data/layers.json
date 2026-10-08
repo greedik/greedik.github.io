@@ -326,7 +326,7 @@
                     "audio": "assets/voices/voice_Gavrilov.wav"
                 },
                 {
-                    "name": "Саня",
+                    "name": "Gedrikon (Саня)",
                     "audio": "assets/voices/voice_Gedrikon.wav"
                 },
                 {
@@ -342,7 +342,7 @@
                     "audio": "assets/voices/voice_Goofy.wav"
                 },
                 {
-                    "name": "Мой",
+                    "name": "greed_ik (мой)",
                     "audio": "assets/voices/voice_Greedik.wav"
                 },
                 {
@@ -406,8 +406,16 @@
                     "audio": "assets/voices/voice_Putin.wav"
                 },
                 {
+                    "name": "Rindix (Женя)",
+                    "audio": "assets/voices/voice_Rindix.wav"
+                },
+                {
                     "name": "Санс",
                     "audio": "assets/voices/voice_Sans.wav"
+                },
+                {
+                    "name": "ShadowBMX",
+                    "audio": "assets/voices/voice_ShadowBMX.wav"
                 },
                 {
                     "name": "Соник",
