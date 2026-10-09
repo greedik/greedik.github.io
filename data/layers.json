@@ -322,6 +322,10 @@
                     "audio": "assets/voices/voice_Donald.wav"
                 },
                 {
+                    "name": "Джигурда",
+                    "audio": "assets/voices/voice_Dzhigurda.wav"
+                },
+                {
                     "name": "Гаврилов",
                     "audio": "assets/voices/voice_Gavrilov.wav"
                 },
