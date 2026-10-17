@@ -358,6 +358,10 @@
                     "audio": "assets/voices/voice_Joker.wav"
                 },
                 {
+                    "name": "Kickrocks (дядя Вадя)",
+                    "audio": "assets/voices/voice_Kickrocks.wav"
+                },
+                {
                     "name": "Копатыч",
                     "audio": "assets/voices/voice_Kopatych.wav"
                 },
@@ -376,6 +380,10 @@
                 {
                     "name": "Мордекай (Обычный Мультик)",
                     "audio": "assets/voices/voice_Mordecai.wav"
+                },
+                {
+                    "name": "[NAGIB_PRO] NG (дядя Про)",
+                    "audio": "assets/voices/voice_NG.wav"
                 },
                 {
                     "name": "Неко Арк",
