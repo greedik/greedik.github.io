@@ -330,6 +330,10 @@
                     "audio": "assets/voices/voice_Dzhigurda.wav"
                 },
                 {
+                    "name": "FlynnFlyTaggart",
+                    "audio": "assets/voices/voice_FFT.wav"
+                },
+                {
                     "name": "Гаврилов",
                     "audio": "assets/voices/voice_Gavrilov.wav"
                 },
