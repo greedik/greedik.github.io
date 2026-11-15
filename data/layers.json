@@ -382,6 +382,10 @@
                     "audio": "assets/voices/voice_Mickey.wav"
                 },
                 {
+                    "name": "MikSid",
+                    "audio": "assets/voices/voice_MikSid.wav"
+                },
+                {
                     "name": "Нагиев",
                     "audio": "assets/voices/voice_Nagiev.wav"
                 },
