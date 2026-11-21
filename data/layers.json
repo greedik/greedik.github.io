@@ -209,6 +209,10 @@
                 {
                     "name": "IvanZolo2004",
                     "image": "assets/hat/hat_18.png"
+                },
+                {
+                    "name": "Кепка Isaac",
+                    "image": "assets/hat/hat_19.png"
                 }
             ]
             
@@ -294,6 +298,10 @@
                 {
                     "name": "Санс",
                     "image": "assets/special/special_04.png"
+                },
+                {
+                    "name": "Мугл",
+                    "image": "assets/special/special_05.png"
                 }
             ]
         },
@@ -301,6 +309,10 @@
         "voice": {
             "name": "Голос",
             "options": [
+                {
+                    "name": "Alexhk777",
+                    "audio": "assets/voices/voice_Alexhk777.wav"
+                },
                 {
                     "name": "Мр.Фокс (Антоник)",
                     "audio": "assets/voices/voice_Antonik.wav"
